@@ -79,8 +79,11 @@ flutter test
   overwritten.
 - **Widgets**: creating, editing offline and deleting through the real UI.
 
-CI runs formatting, analysis, the tests and a web build on Flutter 3.38.5
+CI runs formatting, analysis, the tests and a web build on Flutter 3.50.0
 and the current stable release.
+
+Needs Flutter 3.50 or later; the UI uses the `material_ui` package that
+replaced `package:flutter/material.dart`.
 
 ## Layout
 

@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'src/note_store.dart';
@@ -47,8 +47,7 @@ void _seed(FakeNotesApi server) {
     ..write(
       id: 'try-offline',
       title: 'Try going offline',
-      body:
-          'Use the menu to go offline, edit a few notes, then come back online.',
+      body: 'Use the menu to go offline, edit a few notes, then come back online.',
       updatedAt: now.subtract(const Duration(minutes: 1)),
     );
 }

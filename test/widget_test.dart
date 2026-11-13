@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:offline_notes/main.dart';
 import 'package:offline_notes/src/notes_controller.dart';

@@ -90,15 +90,13 @@ void main() {
 
   test('client errors and bad JSON are not retried', () async {
     expect(
-      (await _error(
-        api((_) async => http.Response('', 400)).pull(cursor: 0),
-      )).retryable,
+      (await _error(api((_) async => http.Response('', 400)).pull(cursor: 0)))
+          .retryable,
       isFalse,
     );
     expect(
-      (await _error(
-        api((_) async => http.Response('', 401)).pull(cursor: 0),
-      )).retryable,
+      (await _error(api((_) async => http.Response('', 401)).pull(cursor: 0)))
+          .retryable,
       isFalse,
     );
     expect(
